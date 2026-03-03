@@ -492,12 +492,7 @@ section.show {
   letter-spacing: 0.5px;
 }
 
-/* about content */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  /* padding: 40px 20px; */
-}
+
 
 .container {
   max-width: 1200px;
@@ -823,21 +818,6 @@ h1 {
   }
 }
 
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "DM Sans", sans-serif;
-  background: #fff;
-  color: #111;
-  padding: 40px 48px;
-  max-width: 1500px;
-} */
 
 .section-heading {
   font-family: "Bebas Neue", sans-serif;
@@ -1049,6 +1029,52 @@ body {
   font-size: 32px;
 }
 
+/* .experience-section {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+} */
+
+.experience-section {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.experience-section h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.item {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.item span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
 /* CONTACT */
 .contact-section {
   padding: 80px 100px;
@@ -1240,43 +1266,6 @@ body {
   color: #999;
 }
 
-.experience-section {
-  padding: 60px 20px;
-  text-align: center;
-  color: white;
-}
-
-.experience-section h2 {
-  margin-bottom: 40px;
-  font-size: 28px;
-}
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.item {
-  background: white;
-  color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-}
-
-.item span {
-  font-size: 30px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
 
 .bottom-section {
   display: flex;
