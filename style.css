@@ -257,9 +257,10 @@ section.show {
   display: flex;
   align-items: flex-end;
   padding: 80px 50px;
-  background-color: #080808; 
+  background-color: #080808;
 }
 
+/* Existing CSS */
 .copyright-text h1 {
   font-size: 18px;
   line-height: 1.7;
@@ -267,6 +268,17 @@ section.show {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+}
+
+/* Add this for bold words */
+.copyright-text h1 strong {
+  font-weight: 700;
+  color: white;
+}
+
+/* Hover effect */
+.copyright-text h1 strong:hover {
+  color: #fe8e65;
 }
 
 .copyright-text sup {
@@ -658,7 +670,7 @@ h1 {
 /* Skills */
 .skills-section {
   padding: 60px 20px;
-  text-align: center; 
+  text-align: center;
   font-size: 56px;
   font-weight: 900;
   margin-bottom: 40px;
@@ -817,7 +829,6 @@ h1 {
   }
 }
 
-
 .section-heading {
   font-family: "Bebas Neue", sans-serif;
   font-size: 56px;
@@ -892,7 +903,7 @@ h1 {
   margin: 60px;
   margin-top: 70px;
   color: #000;
- text-align: center;
+  text-align: center;
 }
 
 /* Fade Animation */
@@ -1036,7 +1047,7 @@ h1 {
   color: white;
 } */
 
-.experience-section {
+/* .experience-section {
   padding: 60px 20px;
   text-align: center;
   color: white;
@@ -1071,9 +1082,48 @@ h1 {
 
 .item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+} */
+
+
+.experience-section {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
 }
 
+.experience-section h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.item {
+  background: #e0e0e0; /* ✅ Default: Light gray */
+  color: #5a5959;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.item span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.item:hover {
+  background: #fe8e65; /* ✅ Hover: Light blue */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 /* CONTACT */
 .contact-section {
@@ -1265,7 +1315,6 @@ h1 {
   font-size: 24px;
   color: #999;
 }
-
 
 .bottom-section {
   display: flex;
